@@ -1,4 +1,3 @@
-
 CREATE TABLE farmacias (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(20),
