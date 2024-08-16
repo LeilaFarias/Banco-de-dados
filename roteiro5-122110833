@@ -13,5 +13,10 @@
     ORDER BY   
         (COUNT(e.fname));
 
-4. 
+4. SELECT e.fname, COUNT(b.fname) FROM employee AS e INNER JOIN employee AS b ON e.ssn=b.superssn GROUP BY(e.fname) ORDER BY (COUNT(b.fname));
+
+5.SELECT e.fname, COUNT(b.fname) FROM employee AS e RIGHT JOIN employee AS b ON e.ssn=b.superssn
+ GROUP BY(e.fname);
+
+ 6. 
 
