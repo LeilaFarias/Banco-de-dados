@@ -1,0 +1,17 @@
+1. SELECT COUNT(fname) FROM employee WHERE sex = 'F';
+2. SELECT AVG(salary) FROM employee WHERE address LIKE '%TX' AND sex = 'M';
+3. SELECT e.superssn AS ssn_supervisor, 
+        COUNT(e.fname) AS qtd_supervisionados 
+    FROM 
+        employee AS e 
+    LEFT JOIN 
+        employee AS b 
+    ON 
+        b.ssn=e.superssn 
+    GROUP BY   
+        (e.superssn) 
+    ORDER BY   
+        (COUNT(e.fname));
+
+4. 
+
